@@ -65,7 +65,6 @@ int Poisk(struct Node* r, int target, int level)
 		return level; // найдено
 		
 
-	// Учитываем инвертированность: слева больше, справа меньше
 	if (target > r->data)
 		return Poisk(r->left, target, level+1);
 	else
